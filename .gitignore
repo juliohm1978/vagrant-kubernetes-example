@@ -1,0 +1,4 @@
+node01/dockerdata.vdi
+master/dockerdata.vdi
+.vagrant
+*.log
