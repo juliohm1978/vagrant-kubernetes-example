@@ -33,7 +33,7 @@ Once the cluster is up and running you can access the master node and start play
 vagrant ssh master
 
 vagrant@master:~$
-vagrant@master:~$ sudo su - 
+vagrant@master:~$ sudo su -
 
 root@master:~#
 root@master:~# kubectl get nodes
