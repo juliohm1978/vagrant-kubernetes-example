@@ -57,7 +57,7 @@ Both will have an extra 40GB disk used as a dedicated partition mounted at `/var
 
 Disks are created with `Standard` variant, so they will begin small and grow as Docker pulls various images used in the cluster.
 
-## Making a single node cluster
+### Making a single node cluster
 
 You can easily convert this setup into a single node cluster by making a few changes.
 
