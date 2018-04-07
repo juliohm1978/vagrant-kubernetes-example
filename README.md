@@ -21,11 +21,11 @@ vagrant up
 This will likely take several minutes to complete, so be patient. Initial provisioning includes:
 
 * Creating two virtual machines (master and node)
-* Add additional disks to VMs to serve as storage for `/var/lib/docker` (40GB VID disks)
-* Install dependencies (ansible, wget, pythong, etc.)
-* Download Kubespray
-* Configure SSH keys for Kubespray
-* Launch Kubespray installation
+* Adding additional disks to VMs to serve as storage for `/var/lib/docker` (40GB VID disks)
+* Installing dependencies (ansible, wget, pythong, etc.)
+* Downloadin Kubespray
+* Configuring SSH keys for Kubespray
+* Launching Kubespray installation
 
 Once the cluster is up and running you can access the master node and start playing with Kubernetes.
 
