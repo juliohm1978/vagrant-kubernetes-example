@@ -20,6 +20,7 @@ cp -vr /vagrant/master.id_rsa /root/.ssh/id_rsa
 cp -vr /vagrant/master.id_rsa.pub /root/.ssh/id_rsa.pub
 cp -vr /vagrant/master.id_rsa /home/vagrant/.ssh/id_rsa
 cp -vr /vagrant/master.id_rsa.pub /home/vagrant/.ssh/id_rsa.pub
-chown -R vagrant.vagrant /home/vagrant/.ssh
 cat /vagrant/master.id_rsa.pub >> /home/vagrant/.ssh/authorized_keys
-
+chown -R vagrant.vagrant /home/vagrant/.ssh
+chmod 600 /root/.ssh/id_rsa
+chmod 600 /home/vagrant/.ssh/id_rsa
