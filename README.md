@@ -57,6 +57,27 @@ Both will have an extra 40GB disk used as a dedicated partition mounted at `/var
 
 Disks are created with `Standard` variant, so they will begin small and grow as Docker pulls various images used in the cluster.
 
+## Making a single node cluster
+
+You can easily convert this setup into a single node cluster by making a few changes.
+
+Modify `kubespray/hosts.ini`:
+
+* Remove `node01` from the inventory.
+* Remove `node01` from the `[kube-node]` group.
+* Include `master` in the `[kube-node]` group.
+
+Modify `Vagrantfile` and comment or remove the `config.vm.define` block that provisions `node01`.
+
+```Vagrantfile
+## remove this block
+# config.vm.define "node01" do |node|
+#   ...
+# end
+```
+
+For a single node cluster, Kubespray will open the master node to receive pods and deployments.
+
 ## Cleanup
 
 To remove all VMs and restart from scratch, the standard vagrant destroy should be enough.
