@@ -10,6 +10,8 @@ Provisoned VMs are based on `ubuntu/xenial64` boxes and Kubernetes is installed 
 
 You will need [Vagrant](https://www.vagrantup.com/docs/installation/) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads) installed locally to launch the virtual machines.
 
+Make sure you have at least 8GB RAM and a few GBs of available disk space. This example will create two 2GB RAM VMs, and each one will have an extra disk attached to serve as a dedicated partition to `/var/lib/docker`.
+
 To provision the cluster:
 
 ```bash
