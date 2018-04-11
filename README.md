@@ -1,6 +1,6 @@
 # Vagrant Kubernetes Example
 
-This project presents a simple example of how Vagrant can be used to launch a small Kubernetes cluster. While minikube is a great, even faster alternative, this project should also give beginners the first steps on how to setup a Kubernetes cluster on bare metal.
+This project presents a simple example of how Vagrant can be used to launch a small Kubernetes cluster. While `minikube` and `kubeadm` are great, even faster alternatives, this project should also give beginners the first steps on how to setup a Kubernetes cluster on bare metal.
 
 Provisoned VMs are based on `ubuntu/xenial64` boxes and Kubernetes is installed with the help of [Ansible 2.5](https://www.ansible.com/) and [Kubespray 2.4.0](https://github.com/kubernetes-incubator/kubespray).
 
